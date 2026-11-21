@@ -13,10 +13,10 @@
 <style>
 /* VOICE: calm, senior, unhurried
    IDEA: a point that finds its balance; the silver ball rises along the divide and settles at the centre
-   PICTURE: large split-circle mark on a mist band
+   PICTURE: large split-circle mark on a silver band
    COLOUR and TYPE: monochrome, navy accent, silver logo dot; Outfit
-   LAYOUT: pale grey hero band, white sections, quiet footer */
-:root{color-scheme:light;--ink:#1C1C1E;--deep:#1F2E4D;--paper:#FFFFFF;--mist:#F3F3F3;--accent:#1F2E4D;--peach:#1F2E4D;--stone:#6B6B6B;--line:#E3E3E3}
+   LAYOUT: silver hero band, white sections, silver footer */
+:root{color-scheme:light;--ink:#1C1C1E;--deep:#1F2E4D;--paper:#FFFFFF;--mist:#F3F3F3;--silver:#A7AEB6;--accent:#1F2E4D;--peach:#1F2E4D;--stone:#6B6B6B;--line:#E3E3E3}
 *{box-sizing:border-box;min-width:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.mark .ball{animation:none!important}}
@@ -31,12 +31,12 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 nav{display:flex;gap:24px;font-size:15px}
 nav a{color:var(--stone);text-decoration:none;padding:10px 0}
 nav a:hover{color:var(--ink)}
-.hero{background:var(--mist);color:var(--ink)}
+.hero{background:var(--silver);color:var(--ink)}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;padding-top:clamp(48px,8vw,110px);padding-bottom:clamp(56px,9vw,120px)}
 h1,h2,h3{font-family:Outfit,system-ui,sans-serif;font-weight:500;letter-spacing:-.015em;margin:0}
 h1{font-size:clamp(40px,6vw,64px);line-height:1.05;text-wrap:balance}
 .tag{color:var(--deep)}
-.hero p.lede{max-width:34em;color:var(--stone);margin:0}
+.hero p.lede{max-width:34em;color:var(--ink);margin:0}
 .mark{display:flex;justify-content:center}
 .mark svg{width:min(100%,340px);height:auto}
 .mark .ball{transform-box:fill-box;transform-origin:center;animation:find 2.8s cubic-bezier(.45,0,.2,1) .3s both}
@@ -58,8 +58,8 @@ h2{font-size:clamp(30px,3.6vw,40px);line-height:1.1;margin-bottom:20px}
 
 .mail{color:var(--accent);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}
 .mail:hover{color:var(--accent)}
-footer{border-top:1px solid var(--line);color:var(--stone);font-size:14px}
-footer .wrap{display:flex;align-items:center;justify-content:center;gap:10px;padding-top:28px;padding-bottom:32px}
+footer{background:var(--silver);color:var(--ink);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;padding-top:28px;padding-bottom:32px}
 footer svg{width:18px;height:18px}
 @media(max-width:760px){
   .hero .wrap,.me{grid-template-columns:minmax(0,1fr)}
@@ -128,7 +128,7 @@ footer svg{width:18px;height:18px}
           <p>The change worth making is rarely the obvious one. In my experience, it comes from understanding how a team works and what an organisation stands for. That is what I set out to do here.</p>
           <p>I still build things myself, and I work with some of the best brand consultants and agencies I know to bring ideas to life.</p>
           <p>When I am not working, you will find me reading (absolutely anything under the sun), working out, planning our next family holiday (oh yes, I plan years in advance), or just spending time with my family.</p>
-          <figure class="aside"><img src="collage.jpg" width="1200" height="1000" alt="Abhi trekking in the Himalaya, squaring up to a sumo wrestler cut-out, and driving along a coastal road" loading="lazy"></figure>
+          <figure class="aside"><img src="collage.jpg" width="1200" height="1100" alt="Abhi trekking in the Himalaya, squaring up to a sumo wrestler cut-out, driving along a coastal road and out on a boat" loading="lazy"></figure>
           <p>Based in Chennai, working with clients globally.</p>
         </div>
       </div>
@@ -140,7 +140,7 @@ footer svg{width:18px;height:18px}
 <footer>
   <div class="wrap">
     <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44" fill="#FFFFFF"/><path d="M50 6a44 44 0 0 0 0 88z" fill="#1F2E4D"/><circle cx="50" cy="50" r="44" fill="none" stroke="#1F2E4D" stroke-width="6"/><circle cx="50" cy="50" r="11" fill="#A7AEB6"/></svg>
-    <span>&copy; 2026 Point of Balance Consulting LLP</span>
+    <span>&copy; 2026 Point of Balance Consulting LLP</span><span aria-hidden="true">&middot;</span><span>LLPIN ADE-3222</span>
   </div>
 </footer>
 </body>
